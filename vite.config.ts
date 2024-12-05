@@ -55,7 +55,7 @@ export default defineConfig(({mode}) => {
       threads: true,
       isolate: true,
       globals: true,
-      exclude: ['./tests/e2e/**', 'node_modules/**']
+      include: ['./tests/**/*.test.ts']
     },
 
     // For @mhsdesign/jit-browser-tailwindcss. The library works without these but logs loads of warnings

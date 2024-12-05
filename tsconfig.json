@@ -1,0 +1,31 @@
+{
+  "compilerOptions": {
+    "lib": ["ESNext", "dom", "dom.iterable"],
+    "module": "ESNext",
+    "target": "ESNext",
+    "esModuleInterop": true,
+    "strict": true,
+    "moduleResolution": "node",
+    "noEmit": true,
+    "skipLibCheck": true,
+
+    "outDir": "dist",
+
+    "allowJs": true,
+    "verbatimModuleSyntax": true,
+    "noUncheckedIndexedAccess": false,
+    "jsx": "preserve",
+    "jsxImportSource": "solid-js",
+    "isolatedModules": true,
+    "types": ["vite/client", "node", "vitest/globals", "@testing-library/jest-dom"],
+
+    "paths": {
+      "@client/*": ["./src/client/*"],
+      "@server/*": ["./src/server/*"],
+      "@shared/*": ["./src/shared/*"],
+      "@tests/*": ["./tests/*"],
+    }
+  },
+  "include": ["src", "tests", "dev"],
+  "exclude": ["node_modules"]
+}
