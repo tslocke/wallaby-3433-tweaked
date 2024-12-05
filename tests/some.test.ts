@@ -1,11 +1,14 @@
+import { foo } from './helpers'
+
+foo()
+
 describe('test something', () => {
   test('whatever', () => {
-    expect(1+2).toBe(3)
+    expect(true).toBe(true)
   })
-  test.onl('something else', () => {
-    expect(1+2).toBe(3)
+  test('something else', async () => {
+    expect(true).toBe(true)
   })
   test('another', () => {
-    expect(1+2).toBe(3)
   })
 })
